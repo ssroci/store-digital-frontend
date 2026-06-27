@@ -1,0 +1,144 @@
+.detail-page {
+  
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.detail-loading {
+  text-align: center;
+  padding: 4rem;
+  color: #6b7280;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.back-btn:hover { color: #111; }
+
+.detail-grid {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.detail-img-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f3f4f6;
+  aspect-ratio: 1;
+}
+
+.detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-category {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.detail-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.detail-desc {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #374151;
+}
+
+.detail-price-row {
+  margin-bottom: 1.5rem;
+}
+
+.detail-price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.btn-add-cart {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 1rem;
+}
+
+.btn-add-cart:hover:not(:disabled) { background: #333; }
+
+.btn-add-cart.in-cart {
+  background: #d1fae5;
+  color: #065f46;
+  cursor: default;
+}
+
+.detail-hint {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #6366f1;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .detail-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .detail-title { font-size: 1.5rem; }
+}

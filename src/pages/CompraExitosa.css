@@ -1,0 +1,42 @@
+.compra-page {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.compra-icon {
+  font-size: 8rem;
+  margin-bottom: 1.5rem;
+  color: rgb(21, 157, 23);
+}
+
+.compra-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.75rem;
+}
+
+.compra-desc {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.compra-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.compra-btn:hover {
+  background: #333;
+}
