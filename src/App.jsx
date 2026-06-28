@@ -8,8 +8,9 @@ import ProductDetail from './pages/ProductDetail';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Carrito from './pages/Carrito';
-import './App.css';
 import CompraExitosa from './pages/CompraExitosa';
+import AdminPanel from './pages/AdminPanel';
+import './App.css';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/carrito" element={<Carrito />} />
             <Route path="/compra-exitosa" element={<CompraExitosa />} />
+            <Route path="/admin" element={<AdminPanel />} />
           </Routes>
         </CartProvider>
       </AuthProvider>
