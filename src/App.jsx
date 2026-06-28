@@ -11,6 +11,8 @@ import Carrito from './pages/Carrito';
 import CompraExitosa from './pages/CompraExitosa';
 import AdminPanel from './pages/AdminPanel';
 import './App.css';
+import VerifyEmail from './pages/VerifyEmail';
+
 
 export default function App() {
   return (
@@ -27,6 +29,7 @@ export default function App() {
             <Route path="/carrito" element={<Carrito />} />
             <Route path="/compra-exitosa" element={<CompraExitosa />} />
             <Route path="/admin" element={<AdminPanel />} />
+            <Route path="/verify-email" element={<VerifyEmail />} />
           </Routes>
         </CartProvider>
       </AuthProvider>
