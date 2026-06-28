@@ -19,7 +19,7 @@
   align-items: start;
 }
 
-/* Items */
+
 .carrito-items {
   display: flex;
   flex-direction: column;
@@ -109,7 +109,7 @@
 
 .clear-btn:hover { color: #ef4444; }
 
-/* Summary */
+
 .carrito-summary {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -179,7 +179,7 @@
 
 .btn-continue:hover { background: #f3f4f6; }
 
-/* Empty */
+
 .carrito-empty {
   text-align: center;
   padding: 5rem 2rem;
