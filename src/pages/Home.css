@@ -110,6 +110,9 @@
   font-weight: 500;
 }
 
+.hero-cta-secondary{
+  display: none;
+}
 .cat-chip:hover {
   background: #e5e7eb;
 }
@@ -204,8 +207,18 @@
   margin: 0;
 }
 
-/* ── RESPONSIVE ── */
+
 @media (max-width: 768px) {
+
+  .hero-cta-secondary {
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    border: 2px solid #111;
+    margin-top: 0.75rem;
+  }
+}
+
   .hero {
     grid-template-columns: 1fr;
   }

@@ -36,6 +36,9 @@ export default function Home() {
           <Link to="/productos" className="hero-cta">
             Ver colección →
           </Link>
+          <Link to="/carrito" className="hero-cta hero-cta-secondary">
+  Ver carrito 🛒
+</Link>
         </div>
 
         <div className="hero-visual">
