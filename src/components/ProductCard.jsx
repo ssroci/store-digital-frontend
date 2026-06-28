@@ -21,9 +21,7 @@ export default function ProductCard({ product }) {
     <div className="product-card" onClick={() => navigate(`/productos/${product._id}`)}>
       <div className="product-img-wrap">
         <img src={product.fileUrl} alt={product.title} className="product-img" />
-        {product.category?.name && (
-          <span className="product-category">{product.category.name}</span>
-        )}
+       
       </div>
       <div className="product-info">
         <h3 className="product-title">{product.title}</h3>

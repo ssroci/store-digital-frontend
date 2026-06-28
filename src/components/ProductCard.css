@@ -87,13 +87,13 @@
   color: #111;
 }
 
-.btn-cart {
-  background: #6366F1;
-  color: #fff;
-  border: none;
-  padding: 0.45rem 1rem;
+btn-cart {
+  background: #fff;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 0.45rem 0.75rem;
   border-radius: 6px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
@@ -101,11 +101,12 @@
 }
 
 .btn-cart:hover:not(:disabled) {
-  background: #333;
+  background: #f3f4f6;
 }
 
 .btn-cart.in-cart {
   background: #d1fae5;
   color: #065f46;
   cursor: default;
+  border: 1px solid #6ee7b7;
 }
