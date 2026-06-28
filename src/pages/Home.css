@@ -94,6 +94,7 @@
   align-items: center;
   text-align: center;
   gap: 30px;
+  text-decoration: none;
 }
 
 .cat-chip img {

@@ -30,13 +30,13 @@ export default function ProductCard({ product }) {
         <p className="product-desc">{product.description}</p>
         <div className="product-footer">
           <span className="product-price">${product.price.toLocaleString()}</span>
-          <button
-            className={`btn-cart ${inCart ? 'in-cart' : ''}`}
-            onClick={addToCart}
-            disabled={inCart}
-          >
-            {inCart ? '✓ Agregado' : '+ Carrito'}
-          </button>
+       <button
+  className={`btn-cart ${inCart ? 'in-cart' : ''}`}
+  onClick={addToCart}
+  disabled={inCart}
+>
+  {inCart ? '✓' : '🛒'}
+</button>
         </div>
       </div>
     </div>

@@ -31,9 +31,7 @@ export default function Productos() {
 
   return (
      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
-      <h1>
-        {category ? `Categoría: ${category}` : "Todos los productos"}
-      </h1>
+     
 
       {loading ? (
         <p>Cargando...</p>
