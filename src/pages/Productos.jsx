@@ -32,13 +32,14 @@ export default function Productos() {
     fetchProducts();
   }, [category]);
 
-  return (
-   <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+return (
+  <div>
     <div className="productos-header">
-  <BackButton />
-   <Link to="/carrito" className="ver-carrito-mobile">Ver carrito 🛒</Link>
-  </div>
-  {loading ? (
+      <BackButton />
+      <Link to="/carrito" className="ver-carrito-mobile">Ver carrito 🛒</Link>
+    </div>
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+      {loading ? (
         <p>Cargando...</p>
       ) : (
         <div className="products-grid">
@@ -48,5 +49,6 @@ export default function Productos() {
         </div>
       )}
     </div>
-  );
+  </div>
+);
 }
