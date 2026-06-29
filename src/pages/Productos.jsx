@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import api from "../services/api";
 import ProductCard from "../components/ProductCard";
+import BackButton from '../components/BackButton';
+
 
 export default function Productos() {
   const [products, setProducts] = useState([]);
@@ -30,10 +32,9 @@ export default function Productos() {
   }, [category]);
 
   return (
-     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
-     
-
-      {loading ? (
+   <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+  <BackButton />
+  {loading ? (
         <p>Cargando...</p>
       ) : (
         <div className="products-grid">
