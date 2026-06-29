@@ -66,6 +66,10 @@
   background: #333;
 }
 
+.hero-cta-secondary {
+  display: none;
+}
+
 .hero-visual {
   margin-top: 100px;
   margin-right: 120px;
@@ -110,9 +114,6 @@
   font-weight: 500;
 }
 
-.hero-cta-secondary{
-  display: none;
-}
 .cat-chip:hover {
   background: #e5e7eb;
 }
@@ -207,18 +208,7 @@
   margin: 0;
 }
 
-
 @media (max-width: 768px) {
-
-  .hero-cta-secondary {
-    display: inline-block;
-    background: #fff;
-    color: #111;
-    border: 2px solid #111;
-    margin-top: 0.75rem;
-  }
-}
-
   .hero {
     grid-template-columns: 1fr;
   }
@@ -242,6 +232,16 @@
   }
 
   .hero-cta {
+    margin-left: 0;
+  }
+
+  .hero-cta-secondary {
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    border: 2px solid #111;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1.75rem;
     margin-left: 0;
   }
 
@@ -279,6 +279,7 @@
   .banner h3 {
     font-size: 1rem;
   }
+}
 
 
 @media (max-width: 400px) {
