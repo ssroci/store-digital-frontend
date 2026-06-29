@@ -4,16 +4,14 @@
 }
 
 .productos-header {
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-  padding: 2rem 2rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.productos-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .productos-header h1 {
   font-size: 2rem;
@@ -105,15 +103,16 @@
   .sidebar { display: flex; flex-direction: row; gap: 1rem; overflow-x: auto; }
   .sidebar h3 { display: none; }
   .cat-list { flex-direction: row; }
-}
 
   .ver-carrito-mobile {
     display: inline-block;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #111;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
     text-decoration: none;
-    padding: 0.4rem 0.75rem;
-    border: 1px solid #d1d5db;
+    padding: 0.6rem 1rem;
     border-radius: 6px;
+    background: #555;
+    border: none;
   }
+}
