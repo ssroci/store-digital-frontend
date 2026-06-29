@@ -10,7 +10,11 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.productos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .productos-header h1 {
   font-size: 2rem;
   font-weight: 800;
@@ -41,7 +45,9 @@
   color: #9ca3af;
   margin: 0 0 0.75rem;
 }
-
+.ver-carrito-mobile {
+  display: none;
+}
 .cat-list {
   list-style: none;
   padding: 0;
@@ -100,3 +106,14 @@
   .sidebar h3 { display: none; }
   .cat-list { flex-direction: row; }
 }
+
+  .ver-carrito-mobile {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+  }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import api from "../services/api";
 import ProductCard from "../components/ProductCard";
+import { Link } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 
 
@@ -33,7 +34,10 @@ export default function Productos() {
 
   return (
    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+    <div className="productos-header">
   <BackButton />
+   <Link to="/carrito" className="ver-carrito-mobile">Ver carrito 🛒</Link>
+  </div>
   {loading ? (
         <p>Cargando...</p>
       ) : (
