@@ -4,7 +4,7 @@ import api from "../services/api";
 import ProductCard from "../components/ProductCard";
 import { Link } from 'react-router-dom';
 import BackButton from '../components/BackButton';
-
+import './Productos.css';
 
 export default function Productos() {
   const [products, setProducts] = useState([]);
