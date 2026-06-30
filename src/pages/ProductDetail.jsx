@@ -51,6 +51,9 @@ export default function ProductDetail() {
             <span className="detail-category">{product.category.name}</span>
           )}
           <h1 className="detail-title">{product.title}</h1>
+          {product.size && (
+            <span className="detail-size">Talle: {product.size}</span>
+          )}
           <p className="detail-desc">{product.description}</p>
 
           {product.tags?.length > 0 && (
@@ -77,6 +80,42 @@ export default function ProductDetail() {
               {' '}para agregar al carrito.
             </p>
           )}
+
+          <div className="benefits-row">
+            <div className="benefit-card">
+              <svg className="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <line x1="2" y1="10" x2="22" y2="10" />
+              </svg>
+              <p>Pagá hasta en 6 cuotas sin interés*</p>
+            </div>
+            <div className="benefit-card">
+              <svg className="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M3 9.5 12 3l9 6.5" />
+                <path d="M5 10v10h14V10" />
+                <line x1="9" y1="20" x2="9" y2="14" />
+                <line x1="15" y1="20" x2="15" y2="14" />
+              </svg>
+              <p>Retiralo Gratis en nuestras sucursales</p>
+            </div>
+            <div className="benefit-card">
+              <svg className="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M21 8 12 3 3 8v8l9 5 9-5V8Z" />
+                <path d="M3 8l9 5 9-5" />
+                <line x1="12" y1="13" x2="12" y2="21" />
+              </svg>
+              <p>Recibilo Gratis</p>
+            </div>
+            <div className="benefit-card">
+              <svg className="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M17 2 21 6l-4 4" />
+                <path d="M3 12v-2a4 4 0 0 1 4-4h14" />
+                <path d="M7 22 3 18l4-4" />
+                <path d="M21 12v2a4 4 0 0 1-4 4H3" />
+              </svg>
+              <p>Primer Cambio gratis*</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -87,7 +87,7 @@
 }
 
 .promo-strip {
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -99,7 +99,20 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+   animation: pulse 1s ease-in-out infinite;
 }
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(68, 68, 66, 0.35);
+  }
+}
+ 
 
 .promo-strip-bold {
   background: #facc15;
@@ -125,11 +138,11 @@
 }
 
 .quick-cats {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
-  gap: 250px;
+  gap: 200px;
   padding: 1.5rem 2rem;
   overflow-x: auto;
   background: #fff;
@@ -140,15 +153,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 30px;
+  gap: 20px;
   text-decoration: none;
 }
 
 .cat-chip img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
+    flex-shrink: 0;
   border-radius: 50%;
+    aspect-ratio: 1 / 1;
 }
 
 .cat-chip span {
@@ -232,7 +247,7 @@
 }
 
 .banner {
-  background: #111;
+  background: #FACC15;
   color: #fff;
   text-align: center;
   padding: 1.5rem 2rem;
@@ -243,12 +258,14 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0 0 0.5rem;
+  color: #111;
 }
 
 .banner p {
   font-size: 0.95rem;
   opacity: 0.7;
   margin: 0;
+  color: #111;
 }
 
 @media (max-width: 768px) {
@@ -282,7 +299,7 @@
     display: inline-block;
     background: #fff;
     color: #111;
-    border: 2px solid #111;
+   
     margin-top: 0.75rem;
     padding: 0.75rem 1.75rem;
     margin-left: 0;

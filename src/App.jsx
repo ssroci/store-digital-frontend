@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Productos from './pages/Productos';
 import ProductDetail from './pages/ProductDetail';
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/admin" element={<AdminPanel />} />
             <Route path="/verify-email" element={<VerifyEmail />} />
           </Routes>
+          <Footer />
         </CartProvider>
       </AuthProvider>
     </BrowserRouter>

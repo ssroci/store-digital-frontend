@@ -21,10 +21,13 @@ export default function ProductCard({ product }) {
     <div className="product-card" onClick={() => navigate(`/productos/${product._id}`)}>
       <div className="product-img-wrap">
         <img src={product.fileUrl} alt={product.title} className="product-img" />
-       
+
       </div>
       <div className="product-info">
         <h3 className="product-title">{product.title}</h3>
+        {product.size && (
+          <span className="product-size">Talle: {product.size}</span>
+        )}
         <p className="product-desc">{product.description}</p>
      <div className="product-footer">
   <span className="product-price">${product.price.toLocaleString()}</span>
