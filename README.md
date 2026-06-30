@@ -17,7 +17,7 @@ Frontend de la tienda online desarrollado con React + Vite, parte del Trabajo In
 ## Backend / API
 
 Este frontend consume la API desplegada en:
-🔗 https://TU-URL-DE-BACKEND.vercel.app
+🔗 https://store-digital-backend.vercel.app
 
 
 
@@ -26,7 +26,7 @@ Este frontend consume la API desplegada en:
 | Campo    | Valor                              |
 |----------|-------------------------------------|
 | Email    | editordidigitalro@gmail.com         |
-| Password | (tu contraseña real)                |
+| Password | (bhyhncplsorhjejg)                |
 
 
 
@@ -34,8 +34,8 @@ Este frontend consume la API desplegada en:
 
 1. Cloná el repositorio:
 ```bash
-git clone https://github.com/TU-USUARIO/digital-store-frontend.git
-cd digital-store-frontend
+git clone https://github.com/ssroci/store-digital-frontend.git
+cd store-digital-frontend
 ```
 
 2. Instalá las dependencias:
