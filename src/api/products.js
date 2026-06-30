@@ -1,7 +1,6 @@
-const API_URL = "http://localhost:4000/api/products";
+import api from '../services/api';
 
 export const getProducts = async () => {
-  const res = await fetch(API_URL);
-  if (!res.ok) throw new Error("Error al traer productos");
-  return res.json();
+  const res = await api.get('/products');
+  return res.data;
 };

@@ -7,6 +7,7 @@ import running from "../assets/running.png";
 import natacion from "../assets/natacion.png";
 import futbol from "../assets/futbol.png";
 import crossfit from "../assets/crossfit.png";
+import heroBg from "../assets/hero-bg.jpg";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -23,7 +24,10 @@ export default function Home() {
     <div className="home">
 
       <section className="hero">
-        <div className="hero-text">
+        <div
+          className="hero-text"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        >
           <h1 className="hero-title">
             RS<br />
             <em>SPORT </em>
@@ -37,8 +41,8 @@ export default function Home() {
             Ver colección →
           </Link>
           <Link to="/carrito" className="hero-cta hero-cta-secondary">
-  Ver carrito 🛒
-</Link>
+            Ver carrito 🛒
+          </Link>
         </div>
 
         <div className="hero-visual">
@@ -48,6 +52,16 @@ export default function Home() {
             className="hero-img"
           />
         </div>
+      </section>
+
+      <section className="promo-strip">
+        <span className="promo-strip-bold">6 CUOTAS SIN INTERÉS</span>
+        <span className="promo-strip-pill">
+          en compras superiores a <strong>$149.999</strong>
+        </span>
+        <span className="promo-strip-cards">
+          *Tarjeta de crédito bancarizada
+        </span>
       </section>
 
       <div className="secund">

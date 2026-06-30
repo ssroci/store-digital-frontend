@@ -6,7 +6,7 @@ import './Auth.css';
 export default function VerifyEmail() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const [status, setStatus] = useState('loading'); // loading | success | error
+  const [status, setStatus] = useState('loading'); 
   const [message, setMessage] = useState('');
 
   useEffect(() => {
