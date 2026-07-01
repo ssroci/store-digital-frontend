@@ -32,6 +32,8 @@ export default function Login() {
 
   return (
     <div className="auth-page">
+      <button className="back-btn auth-back-btn" onClick={() => navigate(-1)}>← Volver</button>
+
       <div className="auth-card">
         <div className="auth-logo"> RS SPORT </div>
         <h1 className="auth-title">Iniciar sesión</h1>
