@@ -25,7 +25,7 @@ Este frontend consume la API desplegada en:
 
 | Campo    | Valor                              |
 |----------|-------------------------------------|
-| Email    | editordidigitalro@gmail.com         |
+| Email    | editordigitalro@gmail.com         |
 | Password | (bhyhncplsorhjejg)                |
 
 
