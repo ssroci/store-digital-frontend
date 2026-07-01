@@ -31,7 +31,7 @@ export default function Register() {
   if (success) {
     return (
       <div className="auth-page">
-        <button className="back-btn auth-back-btn" onClick={() => navigate(-1)}>← Volver</button>
+        <button className="auth-back-btn" onClick={() => navigate(-1)}>←</button>
 
         <div className="auth-card">
           <div className="auth-logo"> RS SPORT </div>
@@ -50,7 +50,7 @@ export default function Register() {
 
   return (
     <div className="auth-page">
-      <button className="back-btn auth-back-btn" onClick={() => navigate(-1)}>← Volver</button>
+      <button className="auth-back-btn" onClick={() => navigate(-1)}>←</button>
 
       <div className="auth-card">
         <div className="auth-logo">RS SPORT </div>
